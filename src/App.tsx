@@ -4,6 +4,7 @@ import CrearPartida from "./Views/CrearPartida";
 import EsperandoJugadores from "./Views/EsperandoJugadores";
 import UnirsePartida from "./Views/UnirsePartida";
 import JugandoPartida from "./Views/JugandoPartida";
+import PartidaTerminada from "./Views/PartidaTerminada";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             {view === 'UnirsePartida' && <UnirsePartida setView={setView} nickname={nickname}/>}
             {view === 'EsperandoJugadores' && <EsperandoJugadores setView={setView} nickname={nickname}/>}
             {view === 'JugandoPartida' && <JugandoPartida setView={setView} nickname={nickname}/>}
+            {view === 'PartidaTerminada' && <PartidaTerminada nickname={nickname}/>}
         </div>
     );
 }
